@@ -27,12 +27,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Oswald&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="STYLE.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 </head>
 
 <body>
@@ -59,18 +69,20 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""
-                                            style="height: 97px;width:138px;    margin-bottom: -27px;margin-left: -30px;"></a>
+                                            style="height: 107px;width:138px;    margin-bottom: -27px;margin-left: -30px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
                                 <div class="menu-wrapper d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
-                                        <nav>
+                                        <nav >
                                             <ul id="navigation">
-                                                <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="courses.html">Past Events</a></li>
-                                                <li><a href="about.html">About</a></li>
+                                                <li class="active"><a href="index.html" data-after="Home">Home</a>
+                                                </li>
+                                                <li><a href="courses.html" data-after="Past Event">Past Events</a>
+                                                </li>
+                                                <li><a href="about.html" data-after="About">About</a></li>
                                                 <!-- <li><a href="#">Blog</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
@@ -78,19 +90,36 @@
                                                         <li><a href="elements.html">Element</a></li>
                                                     </ul>
                                                 </li> -->
-                                                <li><a href="technical.html">Technical Commitee</a></li>
+
+                                                <li class="inMob"><a href="technical.html" data-after="Techinal Committee">Technical
+                                                        Commitee</a></li>
+                                                <li class="inMob"><a href="student.html" data-after="Techinal Committee">Student
+                                                        Commitee</a></li>
+
+                                                <li class="dropdown">
+                                                    <a href="#">Members</a>
+                                                    <ul class="dropdown_content">
+                                                        <li class="Content1"><a href="technical.html">Technical committee</a></li>
+                                                        <li class="Content2"><a href="student.html">Student Committee</a></li>
+                                                    </ul>
+                                                </li>
+
                                                 <!-- <li><a href="advisory.html">Advisory Commitee</a></li> -->
-                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="gallery.html" data-after="Gallery">Gallery</a></li>
                                                 <!-- Button -->
                                                 <!-- <li class="button-header margin-left "><a href="#" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="login.html" class="btn btn3">Log in</a></li> -->
+                                                    <li class="button-header"><a href="login.html" class="btn btn3">Log in</a></li> -->
                                             </ul>
+                                            
                                         </nav>
                                     </div>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
-                            <div class="col-12">
+                            <div class="col-12 ">
+                                <!-- <div class="hamburger">
+                                    <div class="bar"></div>
+                                </div> -->
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
                         </div>
@@ -102,7 +131,7 @@
     </header>
     <main>
         <!--? slider Area Start-->
-        <section class="slider-area ">
+        <section class="slider-area " data-aos="fade-up">
             <div class="slider-active">
                 <!-- Single Slider -->
                 <div class="single-slider slider-height d-flex align-items-center">
@@ -112,8 +141,8 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">IEM Coding Club</h1>
                                     <h2 data-animation="fadeInLeft" data-delay="0.4s" style="color: #fff; 
-                                   " >Be part of community, Be part of
-                                        Coding culture
+                                   line-height: 1.5em;">Be part of community, Be part of
+                                        Coding culture.
 
                                         CC is a community for both beginner and Experts, Students and researchers at iem
                                         kolkata.
@@ -130,7 +159,7 @@
         </section>
         <!-- ? services-area -->
         <div class="services-area">
-            <div class="container">
+            <div class="container attachedHero">
                 <div class="row justify-content-sm-center">
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="single-services mb-30">
@@ -170,7 +199,7 @@
             </div>
         </div>
         <!-- Courses area start -->
-        <div class="courses-area section-padding40 fix">
+        <div class="courses-area section-padding40 fix" data-aos="fade-up">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -189,7 +218,8 @@
                             <div class="properties__caption">
                                 <p>Algo Series</p>
                                 <h3><a href="#" target="_blank">Binary Series</a></h3>
-                                <p>Binary search is a fast search algorithm with run-time complexity of Ο(log n).<br> <br>This search algorithm works on the principle of divide and conquer.
+                                <p>Binary search is a fast search algorithm with run-time complexity of Ο(log n).<br>
+                                    <br>This search algorithm works on the principle of divide and conquer.
 
                                 </p>
 
@@ -229,9 +259,10 @@
                             <div class="properties__caption">
                                 <p>Android Bootcamp</p>
                                 <h3><a href="#">Day 2: Building Sabzi Mandi App Part 1 </a></h3>
-                                <p>Welcome to Day 2 of Android Bootcamp 2021 hosted by Codechef IEMK in collab with GDSC, ACM and CSI Student Chapters of IEM.
+                                <p>Welcome to Day 2 of Android Bootcamp 2021 hosted by Codechef IEMK in collab with
+                                    GDSC, ACM and CSI Student Chapters of IEM.
 
-                                    
+
 
                                 </p>
 
@@ -357,7 +388,7 @@
         <!--? About Area-1 Start -->
         <section class="about-area1 fix pt-10">
             <div class="support-wrapper align-items-center">
-                <div class="left-content1">
+                <div class="left-content1" data-aos="fade-right">
                     <div class="about-icon">
                         <img src="assets/img/icon/about.svg" alt="">
                     </div>
@@ -392,7 +423,7 @@
                             <p>Solve complexity of daily life problem in minimal approach</p>
                         </div>
                     </div>
-                    
+
                     <div class="single-features">
                         <div class="features-icon">
                             <img src="assets/img/icon/right-icon.svg" alt="">
@@ -402,13 +433,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-content1">
+                <div class="right-content1" data-aos="fade-left">
                     <!-- img -->
                     <div class="right-img">
                         <img src="assets/img/gallery/thumbnail.jpg" alt="">
 
-                        <div class="video-icon" >
-                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=zaAjKPbQ2k0"><i class="fas fa-play"></i></a>
+                        <div class="video-icon">
+                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=zaAjKPbQ2k0"><i
+                                    class="fas fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -417,11 +449,11 @@
         <!-- About Area End -->
         <!--? top subjects Area Start -->
         <div class="topic-area section-padding40">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2 style="font-family: 'Rubik Dirt', cursive;">Explore Trends in Programming </h2>
+                            <h2 style="font-family: 'Rubik Dirt', cursive; margin-top: 100px;">Explore Trends in Programming </h2>
                         </div>
                     </div>
                 </div>
@@ -534,15 +566,15 @@
         </div>
         <!-- top subjects End -->
         <!--? About Area-3 Start -->
-       <section class="about-area3 fix">
+        <section class="about-area3 fix">
             <div class="support-wrapper align-items-center">
-                <div class="right-content3">
+                <div class="right-content3" data-aos="fade-left">
                     <!-- img -->
                     <div class="right-img">
                         <img src="assets/img/gallery/about3.png" alt="">
                     </div>
                 </div>
-                <div class="left-content3">
+                <div class="left-content3" data-aos="fade-right">
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-20">
                         <div class="front-text">
@@ -562,7 +594,8 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>The secret of getting ahead is getting started and we aim to provide every student with the right start.</p>
+                            <p>The secret of getting ahead is getting started and we aim to provide every student with
+                                the right start.</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -570,14 +603,15 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>We create a platform which allows students to gain assistance and mentorship to enhance their coding ability. </p>
+                            <p>We create a platform which allows students to gain assistance and mentorship to enhance
+                                their coding ability. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="team-area section-padding40 fix">
-            <div class="container">
+        <section class="team-area section-padding40 fix" style="margin-top: 88px;">
+            <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
@@ -595,7 +629,8 @@
                             <h1 style="color: #141414;">Chairman</h1>
                             <p>HOD,CSE,IEM Kolkata</p>
                         </div>
-                    </div>  <div class="single-cat text-center">
+                    </div>
+                    <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Technical Commitee/Sumanta_Sir.png" alt="">
                         </div>
@@ -606,11 +641,11 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                </section>
+            </div>
+        </section>
         <!-- About Area End -->
         <!--? Team -->
-        <section class="team-area section-padding40 fix">
+        <!-- <section class="team-area section-padding40 fix">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -665,7 +700,7 @@
                             <h2 style="color: #141414;">Graphics Lead</h2>
                         </div>
                     </div>
-                    
+
                     <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/anwesha.png" alt="">
@@ -701,8 +736,8 @@
                             <h5><a href="services.html">Harsha Gupta</a></h5>
                             <h2 style="color: #141414;">Competetive Programming Lead</h2>
                         </div>
-                    </div>  
-                    
+                    </div>
+
                     <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/bidisha.png" alt="">
@@ -731,16 +766,17 @@
                             <h5><a href="services.html">Deena Wilson</a></h5>
                             <h2 style="color: #141414;">Event Management Co-Lead</h2>
                         </div>
-                    </div>   <div class="single-cat text-center">
+                    </div>
+                    <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/mudit_colead.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mudit Anandn</a></h5>
+                            <h5><a href="services.html">Mudit Anand</a></h5>
                             <h2 style="color: #141414;">Wev Dev Co-Lead</h2>
                         </div>
-                    </div> 
-                    
+                    </div>
+
                     <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/aarav.png" alt="">
@@ -759,7 +795,7 @@
                             <h2 style="color: #141414;">Content Lead,IEMCC</h2>
                         </div>
                     </div>
-                        <div class="single-cat text-center">
+                    <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/tanya.png" alt="">
                         </div>
@@ -787,7 +823,7 @@
                             <h2 style="color: #141414;">Blockchain Lead</h2>
                         </div>
                     </div>
-                     <div class="single-cat text-center">
+                    <div class="single-cat text-center">
                         <div class="cat-icon">
                             <img src="assets/img/Members/raihan.png" alt="">
                         </div>
@@ -798,18 +834,18 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Services End -->
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding">
             <div class="support-wrapper align-items-center">
-                <div class="right-content2">
+                <div class="right-content2" data-aos="flip-left">
                     <!-- img -->
                     <div class="right-img">
                         <img src="assets/img/grouppic.jpeg" alt="">
                     </div>
                 </div>
-                <div class="left-content2">
+                <div class="left-content2" data-aos="flip-right">
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-20">
                         <div class="front-text">
@@ -823,38 +859,42 @@
                     </div>
                 </div>
             </div>
-           
+
         </section>
-       
+
         <!-- About Area End -->
     </main>
-   
+
     <footer>
         <div class="footer-wrappper footer-bg">
 
-            <ul>
-            
-                <li class="sociallist"><a class="social" href="https://discord.com/invite/djuKbPAAP7"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
-                <li class="sociallist"><a class="social" href="https://www.youtube.com/c/IEMCodingClub"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-                <li class="sociallist"><a class="social" href="https://www.linkedin.com/company/iemcc/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="sociallist"><a  class ="social" href="https://www.instagram.com/iem_cc/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-              </ul>
+            <ul id="socialmediaIcons">
+
+                <li class="sociallist"><a class="social" href="https://discord.com/invite/djuKbPAAP7"><i
+                            class="fab fa-discord" aria-hidden="true"></i></a></li>
+                <li class="sociallist"><a class="social" href="https://www.youtube.com/c/IEMCodingClub"><i
+                            class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li class="sociallist"><a class="social" href="https://www.linkedin.com/company/iemcc/"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="sociallist"><a class="social" href="https://www.instagram.com/iem_cc/"><i
+                            class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
             <!-- Footer Start-->
-         
+
             <!-- footer-bottom area -->
             <div class="footer-bottom-area">
                 <div class="container">
-                   
+
                     <div class="footer-border">
                         <div class="row d-flex align-items-center">
-                            
+
                             <div class="col-xl-12 ">
-                               
+
                                 <div class="footer-copy-right text-center">
-                                    
+
                                     <p>
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                        
+
                                         This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
                                             href="https://github.com/potatooBot" target="_blank">Keshav Kumar</a>
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -916,6 +956,8 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
