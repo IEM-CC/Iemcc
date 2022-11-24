@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a {
+    background-size: cover;
+}
+
+/* Styling navigation section */
+#navigation {
+    margin: 18px 0;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+}
+
+#navigation li {
+    position: relative;
+    padding: 10px 0;
+}
+
+#navigation li a {
+    font-size: 18px;
+
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+    display: inline-block;
+    padding: 15px 10px;
+    position: relative;
+}
+
+#navigation li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#navigation li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Mobile menu Navigation */
+.mobile_menu .slicknav_menu .slicknav_nav.activate {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -86px;
+    right: 50px;
+    width: 100vw;
+    height: 100vh;
+    /* background: #b293c5; */
+
+    background-color: rgb(31, 30, 30);
+    overflow-x: hidden;
+    transition: 0.5s ease left;
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav a:hover {
+    background: transparent;
+    color: #604b6c;
+}
+
+@media only screen and (max-width : 991px) {
+
+    .mobile_menu .slicknav_menu .slicknav_nav a {
+        text-transform: uppercase;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+    }
+
+    /* 
+    .mobile_menu .slicknav_menu .slicknav_nav a::after {
+        content: attr(data-after);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-transform: initial;
+        transform: translate(-50%, -50%) scale(0) !important;
+        color: rgba(224, 233, 241, 0.021);
+        font-size: 10rem;
+        font-weight: 1000;
+        letter-spacing: 50px;
+        z-index: -1;
+        transition: letter-spacing 0.3s ease !important;
+        color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: rgb(65, 105, 225, 0.2);
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .mobile_menu .slicknav_nav li:hover a::after {
+        letter-spacing: initial !important;
+        
+        transform: translate(-50%, -50%) scale(1) !important;
+    } */
+}
+
+@media only screen and (max-width : 700px) {
+    .mobile_menu .slicknav_menu .slicknav_nav.activate {
+        right: 21px;
+    }
+
+
+}
+
+
+@media screen and (max-height: 300px) {
+    #navigation {
+        margin-top: 40px;
+    }
+}
+
+/* End of Mobile menu Navigation */
+
+/* End of navigation Section */
+
+.slider-area,
+.slider-area2 {
+    position: relative;
+    z-index: 1;
+}
+
+.slider-area::after,
+.slider-area2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.hero_caption {
+    z-index: 2;
+}
+
+.hero-btn {
+    margin-top: 10px;
+}
+
+.attachedHero {
+    position: relative;
+    z-index: 2;
+}
+
+.social {
+    margin-top: 12px;
+}
+
+/* Multiple navigation */
+
+.dropdown_content {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0px;
+    margin: 0px
+}
+
+ul li:hover ul {
+    display: block !important;
+    background-color: #45354e9d;
+    border-radius: 13px;
+}
+
+.dropdown_content li {
+    display: block !important;
+    margin: -10px;
+}
+
+.inMob {
+    display: none !important;
+}
+
+@media only screen and (max-width : 991px) {
+    .inMob {
+        display: initial !important;
+    }
+
+    .dropdown,
+    .dropdown-title {
+        display: none !important;
+    }
+}
+
+/* End of Multiple navigation */
+
+/* Student corner */
+.profile {
+    margin-left: 1.5rem;
+    overflow: hidden;
+}
+
+.profile-pic {
+    overflow: hidden;
+    height: 200px !important;
+    width: 220px !important;
+    border-radius: 50% !important; 
+}
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+.profile-pic:hover img{
+    transform: scale(1.15);
+}
+@media only screen and (max-width : 991px) {
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.prfdina {
+    margin-left: 1.5rem !important;
+}
+
+/* End of Student corner */
